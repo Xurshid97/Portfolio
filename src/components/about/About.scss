@@ -1,0 +1,40 @@
+.about {
+    margin: 137px auto 106px;
+    width: 75%;
+
+    .aboutHead {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: 90%;
+    }
+
+    .aboutBody {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .aboutInfo {
+            max-width: 516px;
+            font-size: 16px;
+        }
+        .aboutImg {
+            max-width: 339px;
+        }
+    }
+
+    @media screen and (max-width : 900px) {
+        .aboutHead {
+            max-width: 100%;
+            gap: 10px;
+            font-size: small;
+
+            .titleClass{
+                hr {
+                    min-width: 30%;
+                }
+            } 
+        }
+    }
+}

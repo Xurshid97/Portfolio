@@ -1,0 +1,84 @@
+
+.showcase{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 62px;
+    margin-bottom: 120px;
+
+    background-image: url('../../assets/Logo\ \(1\).svg');
+    background-repeat: no-repeat;
+    background-size: 155px 155px;
+    background-position: 650px 100px;
+
+    .left_showcase {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .right_showcase {
+
+        .dev_res {
+            padding: 8px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--gray, #ABB2BF);
+
+            .square {
+                appearance: none;
+
+                width: 16px;
+                height: 16px;
+                fill: #C778DD;
+                border: #C778DD;
+                accent-color: var(--primary, #C778DD);
+                background-color: #C778DD;
+            }
+            .square:checked {
+                background-color: black;
+            }
+        }
+    }
+
+    .content {
+        color: var(--white, #FFF);
+        font-size: 26px;
+        font-weight: 600;
+        max-width: 537px;
+        margin-bottom: 6px;
+
+        span {
+            color: var(--primary, #C778DD);
+        }
+    }
+
+    p {
+        color: var(--gray, #ABB2BF);
+        font-size: 16px;
+        max-width: 463px;
+    }
+    
+}
+
+@media screen and (max-width : 760px) {
+    .showcase {
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+    .right_showcase {
+        img {
+            max-width: 300px;
+        }
+
+        .dev_res {
+            font-size: 14px;
+        }
+    }
+}

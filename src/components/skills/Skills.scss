@@ -1,0 +1,68 @@
+.skills {
+    margin: 137px auto 106px;
+    width: 75%;
+
+    .projectHead {
+        display: flex;
+        align-items: center;
+        max-width: 50%;
+    }
+
+    .skillsBody {
+        margin-top: 25px;
+        display: flex;
+        gap: 25px;
+        justify-content: space-between;
+
+        .skillsShapes {
+            padding: 25px 0 0 25px;
+
+            img {
+                width: 100%;
+            }
+        }
+        .skillCards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 570px;
+        }
+        .card {
+            border: 1px solid gray;
+            width: fit-content;
+            padding: 5px 0;
+            max-width: 180px;
+            min-width: 180px;
+            &_header {
+                border-bottom: 1px solid gray;
+                padding: 10px;
+                font-weight: 700;
+            }
+            &_main {
+                padding: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+        .card:hover {
+            cursor: pointer;
+            border: 1px solid green;
+        }
+        
+    }
+
+    @media screen and (max-width: 750px) {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .skillsBody {
+            flex-wrap: wrap;
+
+            .skillsShapes {
+                max-width: 300px;
+            }
+        }
+    }
+}

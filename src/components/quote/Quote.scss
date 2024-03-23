@@ -1,0 +1,46 @@
+.quoter {
+    padding: 32px;
+    width: fit-content;
+    margin: 0 auto;
+    border: 1px solid var(--gray, #ABB2BF);
+    position: relative;
+    font-size: 24px;
+
+    span {
+        position: absolute;
+        bottom: -66px;
+        text-align: center;
+        padding: 16px;
+        right: 0;
+        border: 1px solid var(--gray, #ABB2BF);
+        border-top: none;
+    }
+}
+
+@media screen and (max-width : 870px) {
+    .quoter {
+        font-size: 20px;
+        max-width: 75%;
+
+        span {
+            bottom: -60px;
+        }
+    }
+}
+@media screen and (max-width : 620px) {
+    .quoter {
+        padding: 16px;
+        font-size: 16px;
+        span {
+            bottom: -55px;
+        }
+    }
+}
+@media screen and (max-width : 520px) {
+    .quoter {
+        font-size: 12px;
+        span {
+            bottom: -50px;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+    padding: 32px 0 8px;
+    font-size: 16px;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        
+        span {
+            color: var(--primary, #C778DD);
+        }
+        a:hover {
+            color: var(--gray, #ABB2BF);
+        }
+    }
+
+    select {
+        background: inherit;
+        color: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    select:focus{
+        background: var(--background, #282C33);
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .active {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width : 760px) {
+    nav {
+        .rightNav {
+            display: flex;
+        }
+        .icon {
+            display: flex;
+            height: fit-content;
+        }
+        .logo {
+            height: fit-content;
+        }
+
+        .active {
+            display: flex;
+            flex-direction: column;
+        }
+        .hidden {
+            display: none;
+            transition: ease-in-out;
+            position: relative;
+            margin-left: 100%;
+        }
+    }
+}

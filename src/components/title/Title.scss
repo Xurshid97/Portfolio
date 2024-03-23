@@ -1,0 +1,25 @@
+.titleClass {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 32px;
+
+    span{
+        color: var(--primary, #C778DD);
+    }
+
+    hr{
+        height: 1px;
+        min-width: 70%;
+        border: 1px solid #C778DD;
+    }
+}
+
+@media screen and (max-width : 520px) {
+    .titleClass {
+        hr {
+            min-width: 50%;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.contacts {
+    margin: 137px auto 106px;
+    width: 75%;
+
+    &_head {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: 50%;
+        margin-bottom: 50px;
+    }
+    &_body {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &_left {
+            max-width: 505px;
+        }
+
+        &_right {
+            max-width: 204px;
+            border: 1px solid grey;
+            padding: 15px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .social a {
+                display: flex;
+                gap: 5px;
+            }
+        }
+    }
+}
