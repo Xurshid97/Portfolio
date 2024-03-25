@@ -6,7 +6,7 @@ import pdfR from '../../assets/Khurshidjon Sharopov.pdf'
 
 function About({children}) {
   return (
-    <div className='about'>
+    <div className='about' id='about'>
         <div className="aboutHead">
             {children}
         </div>

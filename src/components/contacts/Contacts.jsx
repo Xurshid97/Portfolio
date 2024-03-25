@@ -2,7 +2,7 @@ import './Contacts.scss'
 
 function Contacts({children}) {
   return (
-    <div className='contacts'>
+    <div className='contacts' id='contacts'>
         <div className="contacts_head">
             {children}
         </div>

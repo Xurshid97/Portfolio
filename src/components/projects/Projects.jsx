@@ -33,7 +33,7 @@ function Projects({children}) {
     ]
     
   return (
-    <div className='projects'>
+    <div className='projects' id='works'>
         <div className="projectHead">
             {children}
             <p>

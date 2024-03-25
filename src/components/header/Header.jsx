@@ -20,10 +20,10 @@ function Header() {
         </div>
         <div className='rightNav'>
             <ul id='navLinks' className='active' ref={navLinksRef}>
-                <li key='home'><span>#</span><a href="">home</a></li>
-                <li key='works'><span>#</span><a href="">works</a></li>
-                <li key='about'><span>#</span><a href="">about-me</a></li>
-                <li key='contact'><span>#</span><a href="">contacts</a></li>
+                <li key='home'><span>#</span><a href="#">home</a></li>
+                <li key='works'><span>#</span><a href="#works">works</a></li>
+                <li key='about'><span>#</span><a href="#about">about-me</a></li>
+                <li key='contact'><span>#</span><a href="#contacts">contacts</a></li>
                 <li key='lang'>
                     <select name="" id="eng">
                         <option value="eng">En</option>
